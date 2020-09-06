@@ -1,0 +1,44 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[ ]:
+
+
+Q.1.)
+
+
+# In[4]:
+
+
+altitude=int(input("Enter altitude: "))
+if altitude<=1000:
+    print("Safe to Land")
+elif 1000<altitude<=5000:
+    print("Bring down to 1000")
+elif 5000<altitude:
+    print("Turn Around")
+
+
+# In[ ]:
+
+
+Q.2.)
+
+
+# In[5]:
+
+
+for i in range(1,201):
+    if i>1:
+        for j in range(2,i):
+            if i%j==0:
+                break
+        else:
+            print(i)
+
+
+# In[ ]:
+
+
+
+
