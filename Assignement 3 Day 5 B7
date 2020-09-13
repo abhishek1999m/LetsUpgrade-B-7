@@ -1,0 +1,75 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# ### Q1.
+
+# In[5]:
+
+
+def prime(n):
+    if(n==1):
+        return False
+    elif(n==2):
+        return True
+    else:
+        for x in range(2,n):
+            if(n%x==0):
+                return False
+        return True
+
+
+# In[6]:
+
+
+lst=list(range(1,2500))
+
+
+# In[7]:
+
+
+lst_prime = []
+
+
+# In[8]:
+
+
+lst_prime_num=filter(prime,lst)
+
+
+# In[9]:
+
+
+print(list(lst_prime_num))
+
+
+# ## Q.3.
+
+# In[1]:
+
+
+lst= ["hey this is sai" ,"i am in mumbai ,...."]
+
+
+# In[2]:
+
+
+lst
+
+
+# In[7]:
+
+
+lst_1=map(lambda x: x.title(),lst)
+
+
+# In[6]:
+
+
+list(lst_1)
+
+
+# In[ ]:
+
+
+
+
